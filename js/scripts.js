@@ -1,5 +1,3 @@
-// API Key: 5b596ceec88a42d98151d7b383431dc9
-
 var MyLegislator = {
 
 };
@@ -41,31 +39,3 @@ $(function() {
     return false;
   });
 });
-
-// $(function() {
-//   var i = 0;
-//   $("form#get-zip").submit(function() {
-//     var zip = $("input#zip").val();
-//     $("ul#legislators").empty();
-//     $.get("http://congress.api.sunlightfoundation.com/legislators/locate?apikey=5b596ceec88a42d98151d7b383431dc9&zip=" + zip, function(responseBody) {
-//       responseBody.results.forEach(function(legislator) {
-//         $("ul#legislators").append("<li>" + legislator.first_name + " " + legislator.last_name + " " + " (" + legislator.chamber + ", " + legislator.party + "-" + legislator.state + ")</li>").hide().fadeIn();
-//         $("ul#legislators").append("<ul class='leftHeader' id='more-info" + i + "'>").hide().fadeIn();
-//         $("ul#more-info" + i).append("<li>" + "<a target='_blank' href=" + legislator.website + ">" + legislator.website + "</a></li>").hide().fadeIn();
-//         $("ul#more-info" + i).append("<li>" + legislator.phone + "</li></ul>").hide().fadeIn();    
-//         if (legislator.twitter_id != "null") {
-//           $("ul#more-info" + i).append("<li>" + "<a target='_blank' href='http://www.twitter.com/" + legislator.twitter_id + "'>Twitter</a></a>").hide().fadeIn();  
-//         }
-//         if (legislator.youtube_id != "null") {
-//           $("ul#more-info" + i).append("<li>" + "<a target='_blank' href='http://www.youtube.com/user/" + legislator.youtube_id + "'>YouTube</a></a>").hide().fadeIn();  
-//         }
-//         $("ul#more-info" + i).append("<img src='img/" + legislator.bioguide_id + ".jpg'>").hide().fadeIn();
-//         i++;
-//       });
-//     });
-
-//     return false;
-//   });
-// });
-
-
